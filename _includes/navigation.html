@@ -1,7 +1,21 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}
+<nav class="nav navbar-inverse col-md-8" role="navigation">
+  <ul class="nav navbar-nav">
+      {% for item in site.data.navigation %}
+        {% assign html = item.link | append: '.html' %}
+        {% assign md = item.link | append: '.md' %}
+        <li {% if page.url == item.link or page.url == html or page.url == md %}class="active"{% endif %}>
+          <a href="{{ item.link }}" title="{{ item.title }}">
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+  </ul>
+
+  <div class="socialMedia">
+      <a href="http://www.facebook.com/OXFPK" itemprop="sameAs" target="_blank" title="Facebook"><img src="/assets/images/SocialMedia/facebook.png" width="30px" height="30px"></a>
+      <a href="http://www.youtube.com/user/OXFPK" itemprop="sameAs" target="_blank" title="YouTube"><img src="/assets/images/SocialMedia/youtube.png" width="30px" height="30px"></a>
+      <a href="http://www.instagram.com/oxford_parkour" itemprop="sameAs" target="_blank" title="Instagram"><img src="/assets/images/SocialMedia/instagram.png" width="30px" height="30px"></a>
+      <a class="hidden" href="http://OXPK.blogspot.com" itemprop="sameAs" target="_blank" title="Blogger"><img src="/assets/images/SocialMedia/bloggr.png" width="30px" height="30px"></a>
+      <a href="mailto:contact@oxfordparkour.co.uk" target="_blank" title="Email"><img src="/assets/images/SocialMedia/email.png" width="30px" height="30px"></a>
+  </div>
 </nav>

@@ -1,4 +1,15 @@
 - name: Home
   link: /
+  title: Return to home page
 - name: About
   link: /about
+  title: About Oxford Parkour
+- name: Sessions
+  link: /sessions
+  title: When we train and what to expect from a Session
+- name: FAQ
+  link: /faq
+  title: Frequently Asked Questions
+- name: Contact
+  link: /contact
+  title: Get in touch with us
