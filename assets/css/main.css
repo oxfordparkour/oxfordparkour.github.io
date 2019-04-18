@@ -1,0 +1,244 @@
+/* Generic CSS - Applies to all (or multiple) pages */
+
+.header {
+    width: 100%;
+    display: block;
+}
+
+.header .logoWrapper{
+    text-align: center;
+}
+
+.header .logo{
+    width: 280px;
+    height: 250px;
+    margin: 17px 0;
+    display: inline-block;
+    background: white;
+  	/*background-image: linear-gradient(rgb(209, 209, 209) 0%, rgb(246, 246, 246) 53%, rgb(255, 255, 255) 100%);*/
+}
+
+.header .logo .logoImage{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.header .logo .logoImage img{
+    margin: 24px 11px 0 0;
+}
+        
+.header .logo .logoText{
+    clear: both;
+    text-align: center;
+    margin-top: -5px;
+    padding-bottom: 28px;
+    display: block;
+    color: black;
+    text-decoration:none;
+    font-size:2em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header nav{
+    background-color: rgba(27, 27, 27, 0.5);
+    margin-bottom:17px;
+}
+
+/*.header nav .nav li a{
+    padding-left: 23px;
+    padding-right: 23px;
+}*/
+
+.nav .socialMedia{
+    float:right;
+    margin: 10px 0;
+}
+
+.nav a {
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.nav .socialMedia a:hover{
+    -webkit-filter: brightness(125%);
+    filter: brightness(120%);
+}
+
+.header .slider{
+    margin-top: 17px;
+	overflow: hidden;
+}
+
+.header .slider .flexslider {
+    margin-bottom: 43px;
+	min-height: 158px;
+}
+
+.flex-control-paging li a {
+	border: white solid 1px;
+	background: none;
+	color: white;
+}
+
+.flex-control-paging li a.flex-active { 
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 1);
+}
+
+body {
+    background-color: black;
+    background:url("../images/background.jpg") center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.centred {
+    max-width: 980px;
+    margin:auto;
+}
+
+.contentWrapper {
+	padding: 0 12px;
+}
+
+.content, .footer  {
+    color: white;
+    font-family: 'Overlock', cursive;
+    font-size: 17px;
+    line-height: 1.4em;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-bottom: 20px;
+    background-color: rgb(27, 27, 27);
+    background-color: rgba(27, 27, 27, 0.5);
+    clear: both;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    font-family: 'Lobster', cursive;
+    /*color: rgb(173, 44, 12);*/
+    color: rgb(200, 60, 20);
+    text-shadow: 3px 3px 3px #141414;
+    filter: dropshadow(color=#141414, offx=3, offy=3);
+}
+
+.content p, .footer p {
+    text-indent : 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content a, .footer a{
+    color: #BBB;
+}
+
+.content a:not(.btn):hover, .content a:not(.btn):active,
+.footer a:not(.btn):hover .footer a:not(.btn):active{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.content .bordered { 
+    background-color: gray;
+	border: black 5px solid;
+	border: solid black 5px; 
+}
+
+.content .pull-right { margin-left: 10px; }
+.content .pull-left { margin-right: 10px; }
+
+.sidebar {
+    font-size: 14px;
+    text-indent:0;
+    
+}
+
+.footer {
+    display: table;
+}
+.footerWrapper {
+    display:table-row;
+}
+.footer .parkourUkLogo {
+    width: 150px;
+}
+.footer p, .footer .parkourUkLogo {
+    display: table-cell;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+
+/* --- Page Specific CSS --- */
+
+/* Home.html */
+.carousel-inner img {
+    margin:auto;
+}
+
+/* About.html */
+
+.content .right-align { text-align: right; }
+.content .right-align .inlineImg { float: right; }
+
+.portrait img { width: 150px; height: 200px; }
+
+#bios .bio { clear: both; }
+
+.biographies .bio.right-align { text-align: right; }
+.biographies .bio.right-align .portrait { float: right; margin: 0 0 0 10px; }
+
+/* Sessions.html */
+.sessionTypes  li { margin-bottom: 10px; list-style: none; text-indent: -30px; }
+
+.sessionTypes li .sessionTitle { margin-right: 10px; }
+
+.timetable { list-style: none; }
+
+.timetable li { margin-bottom: 8px; }
+
+.timetable .day { display: inline-block; width: 70px; }
+
+.timetable .time { display: inline-block; width: 130px; text-align: right; }
+
+.timetable .note {
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+/* Responsive iFrame */
+ 
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.responsive-iframe-container iframe,   
+.vresponsive-iframe-container object,  
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact.html */
+
+.contactLabel {
+    display: inline-block;
+    text-indent: 0;
+    width: 150px;
+}
+
+.contactLink {
+    display: inline-block;
+    text-indent: 0;
+    width: 250px;
+}

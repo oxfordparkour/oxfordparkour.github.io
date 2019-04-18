@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Josefin Sans SemiBold'), local('JosefinSans-SemiBold'), url(../fonts/Josefin_Sans_v3.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(../fonts/Lobster.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Overlock';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Overlock'), local('Overlock-Regular'), url(../fonts/Overclock_v2.woff) format('woff');
+}

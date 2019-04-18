@@ -1,0 +1,56 @@
+#subheader .logo {text-align: center; }
+#subheader h1 { vertical-align: middle; color:#434343; letter-spacing: 1px; }
+@media (min-width: 768px) {
+    #subheader h1 { position: relative; display: table-cell; vertical-align: middle; color:#434343; padding-left:10px; letter-spacing: 1px; }
+}
+.fullWidthImage > * { width: 100%; height: 450px; object-fit: cover; }
+
+/* Sub-header card styles */
+.cards { text-align: center; margin-top: -40px; }
+.cards .card { width: 75%; margin: auto; margin-bottom: 10px; background: white; border: solid 1px #ccc; display: block; padding: 10px 20px 20px 20px; vertical-align: top; min-width: 230px; }
+.cards .card .card-title {color: #434343; font-weight: bold; }
+.cards .card .card-body {color: #434343; }
+
+@media (min-width: 930px) {
+    .cards .card { width: 25%; margin-left: 0.5%; margin-right: 0.5%; margin-bottom: 0; background: white; border: solid 1px #ccc; display: inline-block; padding: 10px 20px 20px 20px; vertical-align: top; min-width: 230px; }
+}
+
+/* Main Body */
+#banner { background: white; }
+#content #banner h2 {color: rgb(58,138,197); font-size:1.5em!important; }
+#content #banner .paragraph {color: #434343; font-size:1.2em!important; }
+
+#gallery {background: white; }
+.sideBySideImages .image {display: inline-block; float: left; width: 100%; }
+.sideBySideImages .image img {width: 100%; max-height: 450px; object-fit: cover;}
+@media (min-width: 768px) {
+    .sideBySideImages .image { width: 50%; }
+}
+
+
+#feedback {background: white; clear: both; padding: 40px 0; }
+#feedback #feedbackSlider blockquote { color: #434343; padding-right:30%!important; }
+#feedback #feedbackSlider .source { color: #434343; }
+#feedback .feedbackImage {width: 30%; float: right;}
+
+/* Common Elements */
+.wsite-button, .blog-button, .wsite-editor .wsite-button { border-radius: 50px; }
+.clearfix:after { content: ""; display: table; clear: both; }
+
+#social { background: white; }
+
+.socialPanel { float: left; width: 100%; background: linear-gradient(to right, rgb(63, 139, 197), rgb(4, 23, 53)); box-sizing: border-box; border: solid 5px white; }
+.socialPanel.inverse { background: linear-gradient(to left, rgb(63, 139, 197), rgb(4, 23, 53)); }
+@media (min-width: 768px) {
+    .socialPanel.halfWidth { width: 50%; }
+}
+.socialPanel .socialHeader { background-color: rgba(0,0,0,0.1); padding: 20px 25px; color: white; margin: 0; }
+.socialPanel .socialBody {padding: 20px 25px; color: white; }
+#instaPanel .socialBody { padding: 0; overflow: hidden; height: 200px; padding-top: -100px; }
+
+#social #subscribePanel { text-align: center; }
+
+#partners { background: white; }
+#partners .wsite-content-title {color: rgb(100,150,169); font-size: 1.5em!important; }
+
+#content { background: white; }

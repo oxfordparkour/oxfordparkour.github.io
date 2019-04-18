@@ -1,0 +1,1 @@
+Images here need to be 950px wide and 500px tall for them to not look weird.
