@@ -1,3 +1,19 @@
+# Oxford Parkour Website
+
+## Background
+
+This is the repo for the website oxfordparkour.co.uk.
+
+It is written in Jekyll and supports both html and markdown pages.
+
+It is written with ease of editing in mind, so Jekyll handles all the niceties, such as templating marking your current page as active.
+
+## Running locally
+
+In order to run the site on your local windows machine, execute the file run.bat. This script assumes that you have already [installed the prerequisites](https://jekyllrb.com/docs/installation/windows/)
+
+TODO: Add a run.sh for running on Linux machines.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/oxfordparkour/oxfordparkour.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
